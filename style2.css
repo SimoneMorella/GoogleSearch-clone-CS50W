@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), 
+    url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) 
+    format('woff2');
+}
+
+body {
+    font-family: 'Product Sans';
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(0,0,0,.87);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 14px;
+}
+
+nav .small-logo {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#c1 {
+    color: #4285F4;
+}
+
+#c2 {
+    color: #DB4437;
+}
+
+#c2.e {
+    transform: rotate(-15deg);
+    display: inline-block;
+    margin-left: -1px;
+}
+
+#c3 {
+    color: #F4B400;
+}
+
+#c4 {
+    color: #0F9D58;
+}
+
+nav > .links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.links > * {
+    text-decoration: none;
+    font-size: smaller;
+    color: rgba(0,0,0,.87);
+}
+
+.links > *:hover {
+    text-decoration: underline;
+}
+
+.title {
+    color: #DB4437;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    border-bottom: 0.5px solid #e5e3e3;
+    padding: 0 0 18px 35px;
+    margin-top: -10px;
+}
+
+.container {
+    height: 60vh;
+    padding: 12px;
+    margin-bottom: 30px;
+    padding-left: 35px;
+}
+
+.container .subtitle {
+    font-weight: 500;
+    font-size: 17px;
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+.container .form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: max-content;
+}
+
+.container .form-box .form-row {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .form-box .form-row label {
+    display: inline-block;
+    width: 13.8rem;
+}
+
+.container .form-box .form-row input {
+    flex: 1;
+    padding: 4px;
+}
+
+.container .form-box .btns {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container .form-box .btns input {
+    padding: 9px;
+    color: #f2f2f2;
+    background-color: #4285F4;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #4285F4;
+}
+
+.container .form-box .btns input:hover {
+    border: 1px solid #013993;
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    font-size: smaller;
+    padding: 8px 0;
+}

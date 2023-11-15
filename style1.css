@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), 
+    url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) 
+    format('woff2');
+}
+
+body {
+    font-family: 'Product Sans';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    overflow-y: hidden;
+    color: rgba(0,0,0,.87);
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    padding: 12px 14px 0 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: smaller;
+    color: rgba(0,0,0,.87);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    height: 60vh;
+    padding: 12px;
+    margin-bottom: 94px;
+}
+
+.container .logo {
+    width: max-content;
+    margin: 0 auto;
+
+}
+
+.container .logo .logo-text {
+    font-size: 84px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+}
+
+#c1 {
+    color: #4285F4;
+}
+
+#c2 {
+    color: #DB4437;
+}
+
+#c2.e {
+    transform: rotate(-15deg);
+    display: inline-block;
+    margin-left: -3px;
+}
+
+#c3 {
+    color: #F4B400;
+}
+
+#c4 {
+    color: #0F9D58;
+}
+
+.container .logo .logo-sub-text {
+    color: #4285F4;
+    width: fit-content;
+    margin: -1rem 0 0 auto;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin-top: 18px;
+}
+
+.form-container .query-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    border: 1px solid #d1cece;
+    border-radius: 16px;
+    height: 2.4rem;
+    padding: 0 1rem;
+}
+
+.form-container .query-input:hover {
+    box-shadow: 0 0 1px 1px #d1cece;
+}
+
+.form-container .query-input #lens {
+    color: #4285F4;
+}
+
+
+.form-container .query-input #query {
+    width: 90%;
+    height: 90%;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+}
+
+.form-container .query-input .endicons {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.endicons > #mic {
+    color: #0f9d589f;
+}
+
+.endicons > #pic {
+    color: #DB4437c5;
+}
+
+.form-container .btn-row {
+    display: flex;
+    gap: 13px;
+    margin-top: 10px;
+    border: none;
+}
+
+.btn-row > * {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-row > *:hover {
+    border: 1px solid #d1cece;
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    font-size: smaller;
+    padding: 8px 0;
+}
+
+/* cambiare da percentuali a pixel e togliere border e outline per input */

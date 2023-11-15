@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav>
+        <a class="small-logo" href="index.html">
+            <span id="c1">G</span>
+            <span id="c2">o</span>
+            <span id="c3">o</span>
+            <span id="c1">g</span>
+            <span id="c4">l</span>
+            <span id="c2" class="e">e</span>
+        </a>
+        <div class="links">
+            <a href="index.html">Homepage</a>
+            <a href="image.html">Image</a>
+        </div>
+    </nav>
+    <div class="title">
+        Advanced Search
+    </div>
+    <div class="container">
+        <div class="subtitle">
+            Find WebPages that contains...
+        </div>
+        <form action="https://google.com/search" class="form-box">
+            <div class="form-row">
+                <label for="first">all these words:</label>
+                <input type="text" id="first" name="as_q">
+            </div>
+            <div class="form-row">
+                <label for="second">this exact word or phrase:</label>
+                <input type="text" id="second" name="as_epq">
+            </div>
+            <div class="form-row">
+                <label for="third">any of these words:</label>
+                <input type="text" id="third" name="as_oq">
+            </div>
+            <div class="form-row">
+                <label for="fourth">none of these words:</label>
+                <input type="text" id="fourth" name="as_eq">
+            </div>
+            <div class="btns">
+                <input type="submit" value="Advanced Search">
+            </div>
+        </form>
+    </div>
+    <footer>
+        Google Search clone for CS50W
+    </footer>
+</body>
+</html>
